@@ -1,5 +1,7 @@
 # Generador Box-Shadow
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7607dc33-cfb6-4a7b-80ef-02b4cf5d2577/deploy-status)](https://app.netlify.com/sites/torme-shadow-gen/deploys)
+
 Una aplicación de frontend desarrollada con React y Vite que permite visualizar y generar propiedades `box-shadow` en tiempo real para aplicar en tus proyectos personales.
 
 ## Enlace a la Aplicación
@@ -77,6 +79,6 @@ Las contribuciones son bienvenidas. Si deseas agregar una nueva característica 
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. 
+Este proyecto está licenciado bajo la Licencia MIT.
 
 ---
