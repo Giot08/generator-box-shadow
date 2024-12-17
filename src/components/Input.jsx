@@ -31,8 +31,8 @@ export const Input = ({ item, setValue }) => {
             min={item.min}
             max={item.max}
             radius='small'
-            onChange={(value) => {
-              setValue(value);
+            onChange={(event) => {
+              setValue(Number(event.target.value), item.label);
             }}
           ></TextField.Root>
         </Box>

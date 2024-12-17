@@ -4,9 +4,9 @@ import data from '../data';
 const useData = () => {
   const [inputData, setInputData] = useState([...data]);
   const [shadow, setShadow] = useState(
-    'box-shadow: 10px 10px 10px 10px rgba(0,0,0,.50);',
+    'box-shadow: 10px 10px 10px 10px rgba(0,0,0,1);',
   );
-  const [color, setColor] = useState('0,0,0,.50');
+  const [color, setColor] = useState('0,0,0,1');
   const [values, setValues] = useState('10px 10px 10px 10px');
 
   function handleInputData(val, label) {
