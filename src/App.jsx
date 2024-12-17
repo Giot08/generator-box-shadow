@@ -2,6 +2,7 @@ import { Theme, Flex, Box, Container } from '@radix-ui/themes';
 import { Output, InputList, Nav } from './components/';
 import useData from './hooks/useData';
 import { useEffect, useState } from 'react';
+import { ClipBoard } from './components/ClipBoard';
 
 function App() {
   const { inputData, handleInputData, shadow } = useData();
@@ -20,9 +21,7 @@ function App() {
       radius='full'
       scaling='95%'
     >
-      <Container
-        size={window.screen.width > 520 ? '2' : '1'}
-      >
+      <Container size={window.screen.width > 520 ? '2' : '1'}>
         <Nav />
         <Flex
           className='container'
@@ -38,18 +37,21 @@ function App() {
               handleInputData={handleInputData}
             />
           </Box>
-          <Flex
+          <Box
             className='box-result-container'
-            align={'center'}
-            justify={'center'}
             style={{ boxShadow: shadowValue }}
           >
-            <Box
-            className='box-result'
-            >
-              <Output data={shadow}></Output>
+            <Box className='box-result'>
+              <Flex
+                direction={'row-reverse'}
+                align={'center'}
+                justify={'between'}
+              >
+                <ClipBoard data={shadow} />
+                <Output data={shadow}></Output>
+              </Flex>
             </Box>
-          </Flex>
+          </Box>
         </Flex>
       </Container>
     </Theme>

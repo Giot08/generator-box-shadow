@@ -5,7 +5,8 @@ export const Output = ({ data }) => {
   return (
     <>
       <Text variant='classic'>
-        .box {"{ "}{data}{" }"}</Text>
+        .box {"{ "}{data}{" }"}
+      </Text>
     </>
   );
 };
