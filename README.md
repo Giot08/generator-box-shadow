@@ -6,7 +6,7 @@ Una aplicación de frontend desarrollada con React y Vite que permite visualizar
 
 ## Enlace a la Aplicación
 
-Accede a la aplicación aquí: [CSS Box-Shadow Generator](https://tuappweb.com).
+Accede a la aplicación aquí: [CSS Box-Shadow Generator](https://shadow-gen.torme.dev/).
 
 ## Características
 
