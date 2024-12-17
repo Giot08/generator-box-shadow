@@ -7,7 +7,7 @@ export const ClipBoard = ({ data }) => {
     navigator.clipboard
       .writeText(text)
       .then(() => {
-        alert('Texto copiado al portapapeles: ' + text);
+        console.log('Texto copiado al portapapeles: ' + text);
       })
       .catch((err) => {
         console.error('Error al copiar: ', err);
